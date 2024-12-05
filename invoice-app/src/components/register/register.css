@@ -1,0 +1,110 @@
+/* Base styles */
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.register-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.register-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.register-left {
+    background: #f0f0f0;
+}
+
+.register-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-heading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.image-preview {
+    display: block;
+    max-width: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.register-left{
+    background-image: url('../../assets/invoice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+
+    .register-box {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-heading {
+        font-size: 20px;
+    }
+
+    .register-input {
+        padding: 8px;
+    }
+
+    .register-btn {
+        padding: 10px;
+    }
+}

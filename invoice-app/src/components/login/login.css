@@ -1,0 +1,109 @@
+/* Base styles */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.login-boxes {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-left {
+    background: #f0f0f0;
+}
+
+.login-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-heading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.login-left{
+    background-image: url('../../assets/invoice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-boxes {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-heading {
+        font-size: 20px;
+    }
+
+    .login-input {
+        padding: 8px;
+    }
+
+    .login-btn {
+        padding: 10px;
+    }
+}
